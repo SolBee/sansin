@@ -1,0 +1,32 @@
+/* Profile.css */
+.profile-container {
+    padding: 20px;
+  }
+  
+  .profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: auto;
+  }
+  
+  .profile-table th,
+  .profile-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .profile-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    position: relative;
+  }
+  
+  .filter-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  

@@ -1,0 +1,21 @@
+.profile-container {
+    padding: 20px;
+  }
+  
+  .profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* 페이지 상단에 붙도록 수정 */
+  }
+  
+  .profile-table th,
+  .profile-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .profile-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
