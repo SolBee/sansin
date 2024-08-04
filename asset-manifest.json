@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sansin/static/css/main.3530da40.chunk.css",
-    "main.js": "/sansin/static/js/main.aaa63dad.chunk.js",
-    "main.js.map": "/sansin/static/js/main.aaa63dad.chunk.js.map",
+    "main.js": "/sansin/static/js/main.21a3b2e4.chunk.js",
+    "main.js.map": "/sansin/static/js/main.21a3b2e4.chunk.js.map",
     "runtime-main.js": "/sansin/static/js/runtime-main.264195af.js",
     "runtime-main.js.map": "/sansin/static/js/runtime-main.264195af.js.map",
     "static/css/2.6cc3709f.chunk.css": "/sansin/static/css/2.6cc3709f.chunk.css",
-    "static/js/2.069ed3ca.chunk.js": "/sansin/static/js/2.069ed3ca.chunk.js",
-    "static/js/2.069ed3ca.chunk.js.map": "/sansin/static/js/2.069ed3ca.chunk.js.map",
+    "static/js/2.ac3d97a9.chunk.js": "/sansin/static/js/2.ac3d97a9.chunk.js",
+    "static/js/2.ac3d97a9.chunk.js.map": "/sansin/static/js/2.ac3d97a9.chunk.js.map",
     "static/js/3.e94ba233.chunk.js": "/sansin/static/js/3.e94ba233.chunk.js",
     "static/js/3.e94ba233.chunk.js.map": "/sansin/static/js/3.e94ba233.chunk.js.map",
     "static/js/4.475d366d.chunk.js": "/sansin/static/js/4.475d366d.chunk.js",
@@ -15,11 +15,11 @@
     "static/js/5.3b9f0b65.chunk.js": "/sansin/static/js/5.3b9f0b65.chunk.js",
     "static/js/5.3b9f0b65.chunk.js.map": "/sansin/static/js/5.3b9f0b65.chunk.js.map",
     "index.html": "/sansin/index.html",
-    "precache-manifest.08fbec3d93df24179b0563c6e9db488a.js": "/sansin/precache-manifest.08fbec3d93df24179b0563c6e9db488a.js",
+    "precache-manifest.191612ac7343f1d807ad3bca6bcc7e8f.js": "/sansin/precache-manifest.191612ac7343f1d807ad3bca6bcc7e8f.js",
     "service-worker.js": "/sansin/service-worker.js",
     "static/css/2.6cc3709f.chunk.css.map": "/sansin/static/css/2.6cc3709f.chunk.css.map",
     "static/css/main.3530da40.chunk.css.map": "/sansin/static/css/main.3530da40.chunk.css.map",
-    "static/js/2.069ed3ca.chunk.js.LICENSE.txt": "/sansin/static/js/2.069ed3ca.chunk.js.LICENSE.txt",
+    "static/js/2.ac3d97a9.chunk.js.LICENSE.txt": "/sansin/static/js/2.ac3d97a9.chunk.js.LICENSE.txt",
     "static/js/3.e94ba233.chunk.js.LICENSE.txt": "/sansin/static/js/3.e94ba233.chunk.js.LICENSE.txt",
     "static/js/4.475d366d.chunk.js.LICENSE.txt": "/sansin/static/js/4.475d366d.chunk.js.LICENSE.txt",
     "static/js/5.3b9f0b65.chunk.js.LICENSE.txt": "/sansin/static/js/5.3b9f0b65.chunk.js.LICENSE.txt"
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.264195af.js",
     "static/css/2.6cc3709f.chunk.css",
-    "static/js/2.069ed3ca.chunk.js",
+    "static/js/2.ac3d97a9.chunk.js",
     "static/css/main.3530da40.chunk.css",
-    "static/js/main.aaa63dad.chunk.js"
+    "static/js/main.21a3b2e4.chunk.js"
   ]
 }
