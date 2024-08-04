@@ -14,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.3",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1",
     "jquery": "^3.7.1",
     "jsvectormap": "^1.6.0",
     "moment": "^2.30.1",
@@ -50,5 +51,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "homepage": "https://{username}.github.io/{repository-name}",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
