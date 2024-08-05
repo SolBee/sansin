@@ -15,8 +15,9 @@ function WorldMap() {
 
   useEffect(() => {
     // Fetch data from Flask API
-    axios.get('/api/locations')
+    axios.get(`${process.env.REACT_APP_API_URL}/api/locations`)
       .then(response => {
+        console.log(response.data); // 데이터 확인
         setLocations(response.data);
       })
       .catch(error => {

@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // BrowserRouter 대신 HashRouter 사용
 import Dashboard from './components/Dashboard';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';

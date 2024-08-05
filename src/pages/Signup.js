@@ -70,11 +70,13 @@ function Signup() {
     e.preventDefault();
     try {
       if (action === "Sign Up") {
-        const response = await axios.get(`https://api.opencagedata.com/geocode/v1/json?q=${formData.residence}&key=${API_KEY}`);
-        if (response.data.results.length > 0) {
-          const { lat, lng } = response.data.results[0].geometry;
-          formData.latitude = lat;
-          formData.longitude = lng;
+        if (formData.residence) { // residence가 빈 값이 아닌 경우에만 OpenCage API 호출
+          const response = await axios.get(`https://api.opencagedata.com/geocode/v1/json?q=${formData.residence}&key=${API_KEY}`);
+          if (response.data.results.length > 0) {
+            const { lat, lng } = response.data.results[0].geometry;
+            formData.latitude = lat;
+            formData.longitude = lng;
+          }
         }
         await axios.post('/api/signup', formData);
         alert('User added successfully');
@@ -84,7 +86,7 @@ function Signup() {
         if (response.status === 200) {
           setAuth({ isAuthenticated: true, user: response.data.user });
           alert('Logged in successfully');
-          navigate('/'); // 로그인 성공 시 대시보드로 이동
+          navigate('/dashboard'); // 로그인 성공 시 대시보드로 이동
         }
       }
     } catch (error) {
