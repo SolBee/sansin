@@ -1,36 +1,25 @@
 {
   "files": {
     "main.css": "/sansin/static/css/main.3530da40.chunk.css",
-    "main.js": "/sansin/static/js/main.fcc9585f.chunk.js",
-    "main.js.map": "/sansin/static/js/main.fcc9585f.chunk.js.map",
-    "runtime-main.js": "/sansin/static/js/runtime-main.20501a62.js",
-    "runtime-main.js.map": "/sansin/static/js/runtime-main.20501a62.js.map",
+    "main.js": "/sansin/static/js/main.96270325.chunk.js",
+    "main.js.map": "/sansin/static/js/main.96270325.chunk.js.map",
+    "runtime~main.js": "/sansin/static/js/runtime~main.72530761.js",
+    "runtime~main.js.map": "/sansin/static/js/runtime~main.72530761.js.map",
     "static/css/2.6cc3709f.chunk.css": "/sansin/static/css/2.6cc3709f.chunk.css",
-    "static/js/2.2365a3f2.chunk.js": "/sansin/static/js/2.2365a3f2.chunk.js",
-    "static/js/2.2365a3f2.chunk.js.map": "/sansin/static/js/2.2365a3f2.chunk.js.map",
-    "static/js/3.3baa778c.chunk.js": "/sansin/static/js/3.3baa778c.chunk.js",
-    "static/js/3.3baa778c.chunk.js.map": "/sansin/static/js/3.3baa778c.chunk.js.map",
-    "static/js/4.64d41e30.chunk.js": "/sansin/static/js/4.64d41e30.chunk.js",
-    "static/js/4.64d41e30.chunk.js.map": "/sansin/static/js/4.64d41e30.chunk.js.map",
-    "static/js/5.85042fa0.chunk.js": "/sansin/static/js/5.85042fa0.chunk.js",
-    "static/js/5.85042fa0.chunk.js.map": "/sansin/static/js/5.85042fa0.chunk.js.map",
-    "static/js/6.fe635f71.chunk.js": "/sansin/static/js/6.fe635f71.chunk.js",
-    "static/js/6.fe635f71.chunk.js.map": "/sansin/static/js/6.fe635f71.chunk.js.map",
+    "static/js/2.2ff7985e.chunk.js": "/sansin/static/js/2.2ff7985e.chunk.js",
+    "static/js/2.2ff7985e.chunk.js.map": "/sansin/static/js/2.2ff7985e.chunk.js.map",
+    "static/js/3.d89a5c26.chunk.js": "/sansin/static/js/3.d89a5c26.chunk.js",
+    "static/js/3.d89a5c26.chunk.js.map": "/sansin/static/js/3.d89a5c26.chunk.js.map",
+    "static/js/4.3389a5bf.chunk.js": "/sansin/static/js/4.3389a5bf.chunk.js",
+    "static/js/4.3389a5bf.chunk.js.map": "/sansin/static/js/4.3389a5bf.chunk.js.map",
+    "static/js/5.fcec078b.chunk.js": "/sansin/static/js/5.fcec078b.chunk.js",
+    "static/js/5.fcec078b.chunk.js.map": "/sansin/static/js/5.fcec078b.chunk.js.map",
+    "static/js/6.b78ec801.chunk.js": "/sansin/static/js/6.b78ec801.chunk.js",
+    "static/js/6.b78ec801.chunk.js.map": "/sansin/static/js/6.b78ec801.chunk.js.map",
     "index.html": "/sansin/index.html",
-    "precache-manifest.81c7089925cf726ba7ad9f5d69b4b9dc.js": "/sansin/precache-manifest.81c7089925cf726ba7ad9f5d69b4b9dc.js",
+    "precache-manifest.2ac6a2f436720473675698edf53f6e14.js": "/sansin/precache-manifest.2ac6a2f436720473675698edf53f6e14.js",
     "service-worker.js": "/sansin/service-worker.js",
     "static/css/2.6cc3709f.chunk.css.map": "/sansin/static/css/2.6cc3709f.chunk.css.map",
-    "static/css/main.3530da40.chunk.css.map": "/sansin/static/css/main.3530da40.chunk.css.map",
-    "static/js/2.2365a3f2.chunk.js.LICENSE.txt": "/sansin/static/js/2.2365a3f2.chunk.js.LICENSE.txt",
-    "static/js/3.3baa778c.chunk.js.LICENSE.txt": "/sansin/static/js/3.3baa778c.chunk.js.LICENSE.txt",
-    "static/js/4.64d41e30.chunk.js.LICENSE.txt": "/sansin/static/js/4.64d41e30.chunk.js.LICENSE.txt",
-    "static/js/5.85042fa0.chunk.js.LICENSE.txt": "/sansin/static/js/5.85042fa0.chunk.js.LICENSE.txt"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.20501a62.js",
-    "static/css/2.6cc3709f.chunk.css",
-    "static/js/2.2365a3f2.chunk.js",
-    "static/css/main.3530da40.chunk.css",
-    "static/js/main.fcc9585f.chunk.js"
-  ]
+    "static/css/main.3530da40.chunk.css.map": "/sansin/static/css/main.3530da40.chunk.css.map"
+  }
 }
