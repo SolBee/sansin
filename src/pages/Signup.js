@@ -86,7 +86,7 @@ function Signup() {
         if (response.status === 200) {
           setAuth({ isAuthenticated: true, user: response.data.user });
           alert('Logged in successfully');
-          navigate('/dashboard'); // 로그인 성공 시 대시보드로 이동
+          navigate('/'); // 로그인 성공 시 대시보드로 이동
         }
       }
     } catch (error) {

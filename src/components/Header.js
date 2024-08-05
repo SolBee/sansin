@@ -39,7 +39,7 @@ function Header() {
               <Typography variant="h6" component="div" sx={{ marginRight: 2, cursor: 'pointer' }} onClick={() => navigate('/myprofile')}>
                 {auth.user.name}
               </Typography>
-              <Button color="inherit" onClick={() => navigate('/dashboard')}>Home</Button>
+              <Button color="inherit" onClick={() => navigate('/')}>Home</Button>
               <Button color="inherit" onClick={() => navigate('/profile')}>Profile</Button>
               <Button color="inherit" onClick={() => navigate('/calendar')}>Calendar</Button>
               <Button color="inherit" onClick={handleLogout}>Logout</Button>

@@ -14,10 +14,8 @@ function WorldMap() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Fetch data from Flask API
-    axios.get(`${process.env.REACT_APP_API_URL}/api/locations`)
+    axios.get('https://sansin.onrender.com/api/locations') // 배포된 Flask 서버의 URL 사용
       .then(response => {
-        console.log(response.data); // 데이터 확인
         setLocations(response.data);
       })
       .catch(error => {

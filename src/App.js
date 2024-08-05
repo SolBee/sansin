@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // BrowserRouter 대신 HashRouter 사용
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';
@@ -25,7 +25,7 @@ function App() {
             <main className="content">
               <Routes>
                 <Route path="/" element={<Dashboard />} />
-                <Route path="/signup" element={<Signup />} />
+                <Route path="/signup" element={<Signup />} />                
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/myprofile" element={<MyProfile />} />
                 <Route path="/calendar" element={<CalendarPage />} />
