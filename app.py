@@ -83,5 +83,14 @@ def login():
     else:
         return jsonify({'message': 'Invalid email or password'}), 401
 
+@app.route('/api/users', methods=['GET'])
+def get_users():
+    users = mongo.db.connect_sans.find({}, {'password': 0})  # 비밀번호 제외
+    result = []
+    for user in users:
+        user['_id'] = str(user['_id'])  # ObjectId를 문자열로 변환
+        result.append(user)
+    return jsonify(result)
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
