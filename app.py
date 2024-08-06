@@ -46,5 +46,30 @@ def serve(path):
     else:
         return send_from_directory(app.static_folder, 'index.html')
 
+@app.route('/api/signup', methods=['POST'])
+def signup():
+    data = request.json
+    print("Received signup data:", data)  # 디버깅을 위한 로그 추가
+    try:
+        mongo.db.connect_sans.insert_one({
+            'name': data['name'],
+            'group': data['group'],
+            'country': data['country'],
+            'residence': data['residence'],
+            'job': data['job'],
+            'job_detail': data['job_detail'],
+            'interests': data['interests'],
+            'club': data['club'],
+            'latitude': data['latitude'],
+            'longitude': data['longitude'],
+            'email': data['email'],
+            'password': data['password']
+        })
+        return jsonify({'message': 'User added successfully'}), 201
+    except Exception as e:
+        print("Error:", str(e))  # 에러 메시지 로그 추가
+        return jsonify({'error': str(e)}), 400
+
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
