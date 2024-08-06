@@ -71,18 +71,20 @@ function Signup() {
     try {
       if (action === "Sign Up") {
         if (formData.residence) { // residence가 빈 값이 아닌 경우에만 OpenCage API 호출
-          const response = await axios.get(`https://api.opencagedata.com/geocode/v1/json?q=${formData.residence}&key=${API_KEY}`);
+          const response = await axios.get('https://api.opencagedata.com/geocode/v1/json?q=${formData.residence}&key=${API_KEY}');
           if (response.data.results.length > 0) {
             const { lat, lng } = response.data.results[0].geometry;
             formData.latitude = lat;
             formData.longitude = lng;
           }
         }
-        await axios.post('/api/signup', formData);
+        console.log("Submitting signup form with data:", formData);
+        await axios.post('https://sansin.onrender.com/api/signup', formData);
         alert('User added successfully');
         handleFormSwitch("Login"); // 성공적으로 등록되면 로그인 탭으로 전환 및 입력 데이터 초기화
       } else {
-        const response = await axios.post('/api/login', { email: formData.email, password: formData.password });
+        console.log("Submitting login form with data:", { email: formData.email, password: formData.password });
+        const response = await axios.post('https://sansin.onrender.com/api/login', { email: formData.email, password: formData.password });
         if (response.status === 200) {
           setAuth({ isAuthenticated: true, user: response.data.user });
           alert('Logged in successfully');
