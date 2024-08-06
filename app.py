@@ -71,5 +71,17 @@ def signup():
         return jsonify({'error': str(e)}), 400
 
 
+@app.route('/api/login', methods=['POST'])
+def login():
+    data = request.json
+    user = mongo.db.connect_sans.find_one({
+        'email': data['email'],
+        'password': data['password']
+    })
+    if user:
+        return jsonify({'message': 'Login successful', 'user': {'name': user['name'], 'email': user['email']}})
+    else:
+        return jsonify({'message': 'Invalid email or password'}), 401
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
