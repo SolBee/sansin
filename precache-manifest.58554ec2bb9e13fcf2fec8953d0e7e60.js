@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d31badcf6731aad0ab758b09dc371588",
+    "revision": "d64d77c2b2499f043c9287d59bba3b8e",
     "url": "/sansin/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sansin/static/css/2.6cc3709f.chunk.css"
   },
   {
-    "revision": "fdd2c28bcc18d87f4841",
+    "revision": "deee478ebb34613d5161",
     "url": "/sansin/static/css/main.3530da40.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sansin/static/js/6.ea18d370.chunk.js"
   },
   {
-    "revision": "fdd2c28bcc18d87f4841",
-    "url": "/sansin/static/js/main.2e25b396.chunk.js"
+    "revision": "deee478ebb34613d5161",
+    "url": "/sansin/static/js/main.4e1ea10e.chunk.js"
   },
   {
     "revision": "54225593a1f834552e0d",
