@@ -14,9 +14,19 @@ function WorldMap() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/api/locations`)
+    console.log('Environment variable:', process.env.REACT_APP_API_URL); // 추가된 부분
+    //const apiUrl = '${process.env.REACT_APP_API_URL}/api/locations';
+    const apiUrl = 'http://127.0.0.1:5000/api/locations';
+    console.log('Fetching locations from:', apiUrl);
+
+    axios.get(apiUrl)
       .then(response => {
-        setLocations(response.data);
+        if (Array.isArray(response.data)) {
+          setLocations(response.data);
+          console.log('Fetched locations:', response.data);
+        } else {
+          console.error('Fetched data is not an array:', response.data);
+        }
       })
       .catch(error => {
         console.error("There was an error fetching the data!", error);
