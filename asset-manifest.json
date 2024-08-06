@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sansin/static/css/main.3530da40.chunk.css",
-    "main.js": "/sansin/static/js/main.8eaa119b.chunk.js",
-    "main.js.map": "/sansin/static/js/main.8eaa119b.chunk.js.map",
+    "main.js": "/sansin/static/js/main.34141faa.chunk.js",
+    "main.js.map": "/sansin/static/js/main.34141faa.chunk.js.map",
     "runtime~main.js": "/sansin/static/js/runtime~main.72530761.js",
     "runtime~main.js.map": "/sansin/static/js/runtime~main.72530761.js.map",
     "static/css/2.6cc3709f.chunk.css": "/sansin/static/css/2.6cc3709f.chunk.css",
@@ -17,7 +17,7 @@
     "static/js/6.b78ec801.chunk.js": "/sansin/static/js/6.b78ec801.chunk.js",
     "static/js/6.b78ec801.chunk.js.map": "/sansin/static/js/6.b78ec801.chunk.js.map",
     "index.html": "/sansin/index.html",
-    "precache-manifest.f413459dd5f0f2564aa11cefa9978651.js": "/sansin/precache-manifest.f413459dd5f0f2564aa11cefa9978651.js",
+    "precache-manifest.e385cb2bc48be045339e318d0a700743.js": "/sansin/precache-manifest.e385cb2bc48be045339e318d0a700743.js",
     "service-worker.js": "/sansin/service-worker.js",
     "static/css/2.6cc3709f.chunk.css.map": "/sansin/static/css/2.6cc3709f.chunk.css.map",
     "static/css/main.3530da40.chunk.css.map": "/sansin/static/css/main.3530da40.chunk.css.map"
