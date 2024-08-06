@@ -114,6 +114,9 @@ def get_user(email):
 @jwt_required()
 def update_user(email):
     data = request.json
+    if not data:
+        return jsonify({'message': 'No input data provided'}), 400
+    
     update_data = {k: v for k, v in data.items() if v}  # 빈 값 무시
     result = mongo.db.connect_sans.update_one({'email': email}, {'$set': update_data})
     if result.modified_count > 0:
