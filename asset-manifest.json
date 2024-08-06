@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sansin/static/css/main.3530da40.chunk.css",
-    "main.js": "/sansin/static/js/main.4e1ea10e.chunk.js",
-    "main.js.map": "/sansin/static/js/main.4e1ea10e.chunk.js.map",
+    "main.js": "/sansin/static/js/main.2a8685c0.chunk.js",
+    "main.js.map": "/sansin/static/js/main.2a8685c0.chunk.js.map",
     "runtime~main.js": "/sansin/static/js/runtime~main.8045c6af.js",
     "runtime~main.js.map": "/sansin/static/js/runtime~main.8045c6af.js.map",
     "static/css/2.6cc3709f.chunk.css": "/sansin/static/css/2.6cc3709f.chunk.css",
-    "static/js/2.6bbb7dae.chunk.js": "/sansin/static/js/2.6bbb7dae.chunk.js",
-    "static/js/2.6bbb7dae.chunk.js.map": "/sansin/static/js/2.6bbb7dae.chunk.js.map",
+    "static/js/2.6e4b97ab.chunk.js": "/sansin/static/js/2.6e4b97ab.chunk.js",
+    "static/js/2.6e4b97ab.chunk.js.map": "/sansin/static/js/2.6e4b97ab.chunk.js.map",
     "static/js/3.18ebb4ed.chunk.js": "/sansin/static/js/3.18ebb4ed.chunk.js",
     "static/js/3.18ebb4ed.chunk.js.map": "/sansin/static/js/3.18ebb4ed.chunk.js.map",
     "static/js/4.83d6c0b6.chunk.js": "/sansin/static/js/4.83d6c0b6.chunk.js",
@@ -17,7 +17,7 @@
     "static/js/6.ea18d370.chunk.js": "/sansin/static/js/6.ea18d370.chunk.js",
     "static/js/6.ea18d370.chunk.js.map": "/sansin/static/js/6.ea18d370.chunk.js.map",
     "index.html": "/sansin/index.html",
-    "precache-manifest.58554ec2bb9e13fcf2fec8953d0e7e60.js": "/sansin/precache-manifest.58554ec2bb9e13fcf2fec8953d0e7e60.js",
+    "precache-manifest.820ff1761ca05118c1b11a668fe0cbd2.js": "/sansin/precache-manifest.820ff1761ca05118c1b11a668fe0cbd2.js",
     "service-worker.js": "/sansin/service-worker.js",
     "static/css/2.6cc3709f.chunk.css.map": "/sansin/static/css/2.6cc3709f.chunk.css.map",
     "static/css/main.3530da40.chunk.css.map": "/sansin/static/css/main.3530da40.chunk.css.map"
