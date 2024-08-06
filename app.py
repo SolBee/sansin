@@ -109,6 +109,17 @@ def get_user(email):
         return jsonify(user)
     else:
         return jsonify({'message': 'User not found'}), 404
+    
+@app.route('/api/user/<email>', methods=['PUT'])
+@jwt_required()
+def update_user(email):
+    data = request.json
+    update_data = {k: v for k, v in data.items() if v}  # 빈 값 무시
+    result = mongo.db.connect_sans.update_one({'email': email}, {'$set': update_data})
+    if result.modified_count > 0:
+        return jsonify({'message': 'User updated successfully'})
+    else:
+        return jsonify({'message': 'No changes made'}), 400
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
