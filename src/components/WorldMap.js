@@ -14,7 +14,7 @@ function WorldMap() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    axios.get('https://sansin.onrender.com/api/locations') // 배포된 Flask 서버의 URL 사용
+    axios.get(`${process.env.REACT_APP_API_URL}/api/locations`)
       .then(response => {
         setLocations(response.data);
       })
