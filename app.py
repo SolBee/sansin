@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request, send_from_directory
 from flask_pymongo import PyMongo
 from flask_cors import CORS
+from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
 import os
 from bson import ObjectId
 from dotenv import load_dotenv
@@ -14,7 +15,9 @@ CORS(app)
 
 # MongoDB 설정
 app.config["MONGO_URI"] = os.getenv("MONGO_URI")
+app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY")  # JWT 시크릿 키
 mongo = PyMongo(app)
+jwt = JWTManager(app)
 
 @app.route('/api/locations', methods=['GET'])
 def get_locations():
@@ -92,15 +95,20 @@ def get_users():
         result.append(user)
     return jsonify(result)
 
-@app.route('/api/user/<email>', methods=['PUT'])
-def update_user(email):
-    data = request.json
-    update_data = {k: v for k, v in data.items() if v}  # 빈 값 무시
-    result = mongo.db.connect_sans.update_one({'email': email}, {'$set': update_data})
-    if result.modified_count > 0:
-        return jsonify({'message': 'User updated successfully'})
+@app.route('/api/protected', methods=['GET'])
+@jwt_required()
+def protected():
+    current_user = get_jwt_identity()
+    return jsonify(logged_in_as=current_user), 200
+
+@app.route('/api/user/<email>', methods=['GET'])
+def get_user(email):
+    user = mongo.db.connect_sans.find_one({'email': email}, {'password': 0})
+    if user:
+        user['_id'] = str(user['_id'])
+        return jsonify(user)
     else:
-        return jsonify({'message': 'No changes made'}), 400
+        return jsonify({'message': 'User not found'}), 404
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
