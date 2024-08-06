@@ -114,15 +114,13 @@ def get_user(email):
 @jwt_required()
 def update_user(email):
     data = request.json
-    if not data:
-        return jsonify({'message': 'No input data provided'}), 400
-    
     update_data = {k: v for k, v in data.items() if v}  # 빈 값 무시
+    print("Received data for update:", update_data)  # 디버깅 로그 추가
     result = mongo.db.connect_sans.update_one({'email': email}, {'$set': update_data})
     if result.modified_count > 0:
         return jsonify({'message': 'User updated successfully'})
     else:
         return jsonify({'message': 'No changes made'}), 400
-
+    
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
