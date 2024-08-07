@@ -11,7 +11,7 @@ load_dotenv()
 app = Flask(__name__, static_folder='client/build')
 
 # Enable CORS
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # MongoDB 설정
 app.config["MONGO_URI"] = os.getenv("MONGO_URI")
