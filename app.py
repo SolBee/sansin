@@ -19,6 +19,7 @@ app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY")  # JWT 시크릿 키
 mongo = PyMongo(app)
 jwt = JWTManager(app)
 
+
 @app.route('/api/locations', methods=['GET'])
 def get_locations():
     try:
